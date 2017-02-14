@@ -1,0 +1,7 @@
+<h1>Tasks#create</h1>
+<p>Find me in app/views/tasks/create.html.erb</p>
+
+<% @tasks.each do |task| %>
+
+  <p><%= task.done ?  "[x]" :  "[ ]" %>  <%= task.name %></p>
+<% end %>

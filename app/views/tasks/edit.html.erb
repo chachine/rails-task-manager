@@ -1,0 +1,13 @@
+<h1>Tasks#edit</h1>
+<p>Find me in app/views/tasks/edit.html.erb</p>
+
+<%= form_for @task, :url => update_task_path do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :done %>
+  <%= f.radio_button :done, true %>yes
+   <%= f.radio_button :done, false %>No
+
+  <%= f.submit %>
+<% end %>
